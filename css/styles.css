@@ -91,7 +91,7 @@ body {
 .header-cnt-1:not(:last-child) {
   margin-right: 50px;
 }
-/* -------------------------------MAIN-1PAGE--------------------------------- */
+/* ----------------------MAIN-1PAGE------------------ */
 
 .main-title {
   margin: 0 auto;
@@ -138,6 +138,23 @@ body {
 .main-btn:hover {
   background-color: #188ce8;
 }
+
+/* --------------------OVERLay------------------------ */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  outline: 1px solid black;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/fon-comand.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* -------------------OVERLay---------------------- */
+
 .main-specific {
   background-color: var(--main-background-color, #ffffff);
   display: flex;
@@ -216,9 +233,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color, #757575);
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
-/* -------------------------------MAIN--PORTFOLIO--------------------------------- */
+.main-our-team-list {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0px;
+}
+.main-our-team-item + .main-our-team-item {
+  margin-left: 10px;
+}
+.main-our-team-link {
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  display: block;
+}
+/* ----------------MAIN--PORTFOLIO------------------- */
 
 .filters {
   padding-inline-start: 0;
