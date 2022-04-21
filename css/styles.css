@@ -103,7 +103,7 @@ img {
   fill: currentColor;
 }
 .header-connect-mail {
-vertical-align: baseline;
+  vertical-align: baseline;
 }
 .header-connect-smartphone {
   vertical-align: middle;
@@ -216,6 +216,16 @@ vertical-align: baseline;
   justify-content: space-between;
   margin: 0;
 }
+.main-specific-aside {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
 .main-specific-title {
   font-weight: 700;
   font-size: 14px;
@@ -286,14 +296,39 @@ vertical-align: baseline;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 .main-our-team-soc-link:hover {
-background-color: #2196f3;
-fill: #fff;
+  background-color: #2196f3;
+  fill: #fff;
 }
 
+/* -------permanent-clients--------- */
+.permanent-clients-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.permanent-clients-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  align-items: center;
+  border-radius: 4px;
+  margin: 0 auto;
+}
 
+.permanent-clients-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: var(--main-text-title-color, #212121);
+  margin-bottom: 50px;
+}
 
 /* ----------------MAIN--PORTFOLIO------------------- */
 
@@ -397,8 +432,6 @@ fill: #fff;
 }
 .footer-address p {
   margin: 0;
-}
-.footer-address .list {
 }
 .footer-link a {
   color: rgba(255, 255, 255, 0.6);
