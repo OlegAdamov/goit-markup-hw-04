@@ -320,9 +320,22 @@ img {
   width: 170px;
   height: 92px;
 }
+.permanent-clients-group svg {
+  fill: #afb1b8;
+}
 .permanent-clients-link:hover {
   border-color: #2196f3;
   cursor: pointer;
+}
+.permanent-clients-link:focus {
+  border-color: #2196f3;
+  cursor: pointer;
+}
+.permanent-clients-link:hover .permanent-clients-icon {
+  fill: #2196f3;
+}
+.permanent-clients-link:focus .permanent-clients-icon {
+  fill: #2196f3;
 }
 .permanent-clients-link {
   display: flex;
