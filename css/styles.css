@@ -299,9 +299,16 @@ img {
 .main-our-team-soc-icon {
   fill: #afb1b8;
 }
-.main-our-team-soc-link:hover,
-.main-our-team-soc-icon:hover {
+.main-our-team-soc-link:hover {
   background-color: #2196f3;
+}
+.main-our-team-soc-link:focus {
+  background-color: #2196f3;
+}
+.main-our-team-soc-link:hover .main-our-team-soc-icon {
+  fill: #fff;
+}
+.main-our-team-soc-link:focus .main-our-team-soc-icon {
   fill: #fff;
 }
 
