@@ -101,6 +101,7 @@ img {
 .header-connect-mail,
 .header-connect-smartphone {
   fill: currentColor;
+  margin-right: 10px;
 }
 .header-connect-mail {
   vertical-align: baseline;
@@ -189,8 +190,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* -------------------OVERLay---------------------- */
 
 .main-specific {
   background-color: var(--main-background-color, #ffffff);
@@ -296,9 +295,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-our-team-soc-icon {
   fill: #afb1b8;
 }
-.main-our-team-soc-link:hover {
+.main-our-team-soc-link:hover,
+.main-our-team-soc-icon:hover {
   background-color: #2196f3;
   fill: #fff;
 }
@@ -315,10 +317,14 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
   margin: 0 auto;
 }
-
+.permanent-clients-item:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
 .permanent-clients-h2 {
   font-weight: 700;
   font-size: 36px;
@@ -355,8 +361,6 @@ img {
   border: none;
   color: var(--header-text-color, #212121);
   background-color: #f5f4fa;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
 }
@@ -368,6 +372,8 @@ img {
 .main-button:focus {
   color: #ffffff;
   background-color: var(--header-text-background-color, #2196f3);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;
@@ -375,7 +381,13 @@ img {
   margin: -15px;
 }
 .portfolio-list li {
-  margin: 15px;
+  margin: 13px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-list li:hover,
+.portfolio-list li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .main-ptf {
   background-color: var(--main-background-color);
@@ -402,11 +414,12 @@ img {
 }
 
 /* -------------------------------FOOTER--------------------------------- */
-
 .footer {
   background-color: var(--footer-background-color);
 }
-.footer {
+.footer > .container {
+  display: flex;
+  justify-content: flex-start;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -438,4 +451,20 @@ img {
 }
 .footer-link li:not(:last-child) {
   margin-bottom: 9px;
+}
+.social {
+  margin: 12px auto auto 70px;
+}
+.social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.main-our-team-list a {
+  fill: #fff;
+  background: rgba(255, 255, 255, 0.1);
 }
