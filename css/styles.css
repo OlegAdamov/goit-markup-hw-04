@@ -103,12 +103,6 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-.header-connect-mail {
-  vertical-align: baseline;
-}
-.header-connect-smartphone {
-  vertical-align: middle;
-}
 .header-connect {
   font-weight: 500;
   font-size: 14px;
@@ -123,6 +117,7 @@ img {
 
 .header-cnt {
   display: flex;
+  align-items: center;
   margin: 0 0 0 auto;
   padding: 0;
 }
@@ -169,7 +164,9 @@ img {
   color: #ffffff;
   background-color: var(--header-text-background-color, #2196f3);
   border-radius: 4px;
+  border: none;
   margin: 0 auto;
+  padding: 10px 32px;
   position: relative;
 }
 .main-btn:hover {
@@ -343,7 +340,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  padding: 16px 0;
+  height: 100%;
 }
 .permanent-clients-h2 {
   font-weight: 700;
@@ -445,7 +442,7 @@ img {
 }
 .footer > .container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 .footer-link-w {
   font-family: 'Raleway', sans-serif;
@@ -480,7 +477,6 @@ img {
 /* ---social--for---footer---- */
 .social {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .social-text {
   font-weight: 700;
